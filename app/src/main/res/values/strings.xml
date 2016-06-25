@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">DevIntensive</string>
+    <string name="app_name">Владимир Лысак</string>
+    <string name="textViewRating">Рейтинг</string>
+    <string name="textViewWritenLines">Написано строк кода</string>
+    <string name="textViewProjects">Проектов</string>
+    <string name="hintMobliePhone">Мобильный телефон</string>
+    <string name="hintEmail">E-mail</string>
+    <string name="hintVk">Профиль Вконтакте</string>
+    <string name="hintGithub">Репозиторий</string>
+    <string name="hintAbout">О себе</string>
 </resources>
