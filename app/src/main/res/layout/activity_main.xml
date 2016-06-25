@@ -33,7 +33,7 @@
                 android:fontFamily="sans-serif-condensed"
                 android:textSize="24sp"
                 android:textColor="@color/color_white"
-                android:text="5"/>
+                android:text="@string/textRating"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -66,7 +66,7 @@
                 android:fontFamily="sans-serif-condensed"
                 android:textSize="24sp"
                 android:textColor="@color/color_white"
-                android:text="555"/>
+                android:text="@string/textProjects"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -99,7 +99,7 @@
                 android:fontFamily="sans-serif-condensed"
                 android:textSize="24sp"
                 android:textColor="@color/color_white"
-                android:text="25"/>
+                android:text="@string/textProjects"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -129,6 +129,7 @@
 
                 <ImageView
                     style="@style/icon.left"
+                    android:contentDescription="Иконка"
                     android:src="@drawable/ic_call_black_24dp"/>
                 <LinearLayout
                     android:layout_width="0dp"
@@ -145,7 +146,7 @@
                         android:layout_height="wrap_content">
                         <EditText
                             android:hint="@string/hintMobliePhone"
-                            android:text="+8(093)555-44-33"
+                            android:text="@string/textPhone"
                             android:layout_width="wrap_content"
                             android:inputType="phone"
                             android:layout_height="wrap_content" />
@@ -158,11 +159,8 @@
                     android:src="@drawable/ic_phone_in_talk_black_24dp"/>
             </LinearLayout>
 
-            <View
-                android:layout_gravity="right"
-                android:layout_width="330dp"
-                android:layout_height="1dp"
-                android:background="@color/color_delimiter_grey" />
+            <View style="@style/horDelimiter" />
+
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -173,6 +171,7 @@
 
                 <ImageView
                     style="@style/icon.left"
+                    android:contentDescription="Иконка"
                     android:src="@drawable/ic_email_black_24dp"/>
                 <LinearLayout
                     android:layout_width="0dp"
@@ -191,7 +190,7 @@
                         <EditText
                             android:inputType="textEmailAddress"
                             android:hint="@string/hintEmail"
-                            android:text="vladimir@gmail.com"
+                            android:text="@string/textEmail"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content" />
 
@@ -203,11 +202,8 @@
                     android:src="@drawable/ic_send_black_24dp"/>
             </LinearLayout>
 
-            <View
-                android:layout_gravity="right"
-                android:layout_width="330dp"
-                android:layout_height="1dp"
-                android:background="@color/color_delimiter_grey" />
+            <View style="@style/horDelimiter" />
+
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -234,7 +230,7 @@
                         <EditText
                             android:inputType="textUri"
                             android:hint="@string/hintVk"
-                            android:text="https://vk.com/id81835087"
+                            android:text="@string/textVk"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content" />
 
@@ -246,11 +242,7 @@
                     android:src="@drawable/ic_visibility_black_24dp"/>
             </LinearLayout>
 
-            <View
-                android:layout_gravity="right"
-                android:layout_width="330dp"
-                android:layout_height="1dp"
-                android:background="@color/color_delimiter_grey" />
+            <View style="@style/horDelimiter" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -282,7 +274,7 @@
                         <EditText
                             android:inputType="textMultiLine"
                             android:hint="@string/hintGithub"
-                            android:text="https://github.com/vladimir-sumy/DevIntensive"
+                            android:text="@string/textGithub"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content" />
 
@@ -299,11 +291,8 @@
 
 
 
-            <View
-                android:layout_gravity="right"
-                android:layout_width="330dp"
-                android:layout_height="1dp"
-                android:background="@color/color_delimiter_grey" />
+            <View style="@style/horDelimiter" />
+
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -325,30 +314,28 @@
                     android:orientation="horizontal"
                     android:layout_marginLeft="@dimen/spacing_medium_32"
                     android:layout_marginRight="@dimen/spacing_normal_16"
-                    android:gravity="center_vertical"
-                    >
+                    android:gravity="center_vertical">
 
                     <android.support.design.widget.TextInputLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
 
                         <EditText
-                            android:inputType="textMultiLine"
-                            android:singleLine="false"
+
+
                             android:hint="@string/hintAbout"
-                            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                            android:text="@string/textAbout"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content" />
+                            android:layout_height="wrap_content"
+
+                            />
 
                     </android.support.design.widget.TextInputLayout>
                 </LinearLayout>
             </LinearLayout>
 
-            <View
-                android:layout_gravity="right"
-                android:layout_width="330dp"
-                android:layout_height="1dp"
-                android:background="@color/color_delimiter" />
+            <View style="@style/horDelimiter" />
+
 
 
         </LinearLayout>
